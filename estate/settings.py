@@ -140,4 +140,4 @@ MEDIA_URL = '/media/'
 try:
     from .local_settings import *
 except ImportError:
-    pass
+    print('Bat: Unable to load local_settings.py:')

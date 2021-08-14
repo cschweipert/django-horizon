@@ -1,0 +1,20 @@
+#header {
+    height: 50px;
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#branding h1 {
+    color: #fff;
+}
+
+/* copy from chrome console */
+.module caption, .inline-group h2 {
+    background-color: #333333;
+}
+
+.brand_image {
+    border-radius: 5px;
+    margin-right: 10px;
+}

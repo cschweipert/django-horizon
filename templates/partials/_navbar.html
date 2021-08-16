@@ -15,8 +15,7 @@
 
         <li {% if 'about' in request.path %} class="nav-item active mr-3 dropdown" {% elif 'alexa' in request.path %}
           class="nav-item active mr-3 dropdown" {% else %} class="nav-item mr-3 dropdown" {% endif %}>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Our Team
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">

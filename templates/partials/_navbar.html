@@ -3,9 +3,7 @@
 <img id="top" class="logo" src="{% static '/img/horizonnew.png' %}" alt="horizon logo">
 <nav id="mynav" class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" href="{% url 'index' %}">
-      <!-- <img src="{% static '/img/logo.png' %}" class="logo" alt=""> -->
-    </a>
+    <a class="navbar-brand" href="{% url 'index' %}"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,40 +17,24 @@
           class="nav-item active mr-3 dropdown" {% else %} class="nav-item mr-3 dropdown" {% endif %}>
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            About
+            Our Team
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{% url 'about' %}">Geof Schlittgen</a>
             <a class="dropdown-item" href="{% url 'alexa' %}">Alexa Schlittgen</a>
         </li>
-
-        <!-- class="nav-item dropdown" -->
-
-        <!-- <li {% if 'about' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
-          <a class="nav-link" href="{% url 'about' %}">About</a>
-        </li> -->
         <li {% if 'listings' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3"
           {% endif %}>
           <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
         </li>
         <li {% if 'mls' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3" {% endif %}>
-          <a class="nav-link" href="{% url 'mls' %}">MLS Search</a>
+          <a class="nav-link" href="{% url 'mls' %}">Search</a>
         </li>
         <li>
-          <a class="nav-link" href="mailto:geofs@horizondurango.com">Contact us</a>
+          <a class="nav-link" href="mailto:geofs@horizondurango.com">Contact</a>
         </li>
       </ul>
-
-      <!-- <ul class="navbar-nav ml-auto">
-          <li class="nav-item mr-3">
-            <a class="nav-link" href="register.html">
-              <i class="fas fa-user-plus"></i> Register</a>
-          </li>
-          <li class="nav-item mr-3">
-            <a class="nav-link" href="login.html">
-              <i class="fas fa-sign-in-alt"></i>Login</a>
-          </li>
-        </ul> -->
     </div>
   </div>
 </nav>
+<img src="{% static '/img/san-juan-mountains.jpg' %}" alt="San Juans">

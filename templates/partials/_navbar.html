@@ -16,7 +16,7 @@
         <li {% if 'about' in request.path %} class="nav-item active mr-3 dropdown" {% elif 'alexa' in request.path %}
           class="nav-item active mr-3 dropdown" {% else %} class="nav-item mr-3 dropdown" {% endif %}>
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Our Team
+            The Team
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{% url 'about' %}">Geof Schlittgen</a>
@@ -36,4 +36,4 @@
     </div>
   </div>
 </nav>
-<img src="{% static '/img/san-juan-mountains.jpg' %}" alt="San Juans">
+<img class="san-juans" src="{% static '/img/san-juan-mountains.jpg' %}" alt="San Juans">

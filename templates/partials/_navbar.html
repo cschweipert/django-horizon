@@ -19,8 +19,8 @@
             The Team
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{% url 'about' %}">Geof Schlittgen</a>
-            <a class="dropdown-item" href="{% url 'alexa' %}">Alexa Schlittgen</a>
+            <a class="dropdown-item mynav mydrop" href="{% url 'about' %}">Geof Schlittgen</a>
+            <a class="dropdown-item mynav mydrop" href="{% url 'alexa' %}">Alexa Schlittgen</a>
         </li>
         <li {% if 'listings' in request.path %} class="nav-item active mr-3" {% else %} class="nav-item mr-3"
           {% endif %}>

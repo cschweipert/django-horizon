@@ -74,6 +74,12 @@ h4 {
   padding: 0;
 }
 
+.mydrop {
+  background-color: #fff !important;
+  color: #333333;
+  padding-left: 10px;
+}
+
 .navbar {
   text-transform: uppercase;
 }
